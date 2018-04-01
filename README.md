@@ -4,8 +4,8 @@ This prorgam downloads a new image from [Unsplash][1]. It checks whether the scr
 
 ## Dependencies
 
-+ [PHP][2] - Available in repositories of most popular distributions.
-+ [Composer][3] - Available in repositories of most popular distributions.
++ [jq][2] - Needed for parsing JSON.
++ [curl][3] - Available in most software repositories. Also, most probably installed already.
 + [Imagemagick][4] - Specifically, the `convert` command.
 + [i3lock-color][5] - Available in AUR (For Arch users). Fork of i3lock with more features. Do not use i3lock since this program utilizes the features of i3lock-color.
 + [bash][6] - Most probably will be installed already.
@@ -49,8 +49,8 @@ The lock screen customization has been made easier using `~/.config/lock_prefere
 
 <!--Links-->
 [1]: https://unsplash.com
-[2]: https://php.net
-[3]: https://getcomposer.org
+[2]: https://stedolan.github.io/jq/
+[3]: https://curl.haxx.se
 [4]: https://imagemagick.org
 [5]: https://github.com/PandorasFox/i3lock-color
 [6]: https://www.gnu.org/software/bash/
