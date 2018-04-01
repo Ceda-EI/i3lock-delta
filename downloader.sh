@@ -24,7 +24,7 @@ image_url=$(curl -s $image_download_url | jq -r .url)
 if [[ $? -ne 0 ]] ; then exit 1; fi
 
 # Download image and check if curl fails
-curl $image_url > ~/.rand_bg
+curl -s $image_url > ~/.rand_bg
 if [[ $? -ne 0 ]] ; then exit 1; fi
 
 # Write author's name to file
