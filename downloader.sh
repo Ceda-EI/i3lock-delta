@@ -18,7 +18,10 @@ if ! json=$(curl -s $url); then
 fi
 
 # Get image location from json
-image_url=$(echo $json | jq -r ".links.download_location")
+image_download_url=$(echo $json | jq -r ".links.download_location")
+image_download_url="$image_download_url?client_id=$key"
+image_url=$(curl -s $image_download_url | jq -r .url)
+if [[ $? -ne 0 ]] ; then exit 1; fi
 
 # Download image and check if curl fails
 curl $image_url > ~/.rand_bg
