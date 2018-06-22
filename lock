@@ -31,14 +31,14 @@ xset dpms force off
 
 # Call the lock
 i3lock -i $HOME/.rand_bg.png -knf --force-clock\
-    --timecolor="$TIMECOLOR" --layout-align 1 --time-align 1 --timefont="$TIMEFONT" \
-    --datecolor="$DATECOLOR" --timepos "30:h-ch" --datesize="$DATESIZE" \
-    --timesize="$TIMESIZE" --datestr="$DATESTYLE" -e --datefont="$DATEFONT" \
+    --timecolor="$TIMECOLOR" --layout-align 1 --time-align 1 --time-font="$TIMEFONT" \
+    --datecolor="$DATECOLOR" --timepos "35:iy+15" --datesize="$DATESIZE" \
+    --timesize="$TIMESIZE" --datestr="$DATESTYLE" -e --date-font="$DATEFONT" \
     --date-align 1 --insidevercolor="$VERIFYING_INSIDE" --insidewrongcolor="$WRONG_INSIDE" \
     --insidecolor="$INSIDE" --linecolor="$LINE" --keyhlcolor="$KEYPRESS" --bshlcolor="$BACKSPACEPRESS" \
     --ringcolor="$RINGCOLOR" --ringvercolor="$RINGVERIFYINGCOLOR" --ringwrongcolor="$RINGWRONGCOLOR" \
     --separatorcolor="$KEYPRESS" --indpos="w-r-30:h-r-60" --radius="$RINGRADIUS" --modsize=1 \
-    --textsize="$RINGTEXTSIZE" --indicator --timestr="$TIMESTYLE"
+    --wrongsize="$RINGTEXTSIZE" --verifsize="$RINGTEXTSIZE" --indicator --timestr="$TIMESTYLE"
 
 # Resume dunst
 pkill -u ahmad_saalim -USR2 dunst
