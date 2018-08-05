@@ -24,7 +24,7 @@ RINGRADIUS=45
 source $HOME/i3lock-delta/config
 
 # Pause dunst
-pkill -u ahmad_saalim -USR1 dunst
+pkill -u $USER -USR1 dunst
 # Set the image as used.
 echo 1 > $HOME/.config/lock_screen.sta
 xset dpms force off
@@ -41,4 +41,4 @@ i3lock -i $HOME/.rand_bg.png -knf --force-clock\
     --wrongsize="$RINGTEXTSIZE" --verifsize="$RINGTEXTSIZE" --indicator --timestr="$TIMESTYLE"
 
 # Resume dunst
-pkill -u ahmad_saalim -USR2 dunst
+pkill -u $USER -USR2 dunst
